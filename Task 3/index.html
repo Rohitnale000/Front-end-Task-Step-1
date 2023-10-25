@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- header for large screen -->
+    <header id="header1">
+        <div class="container-fluid shadow p-3 bg-body rounded">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 d-flex">
+                        <div>
+                            <a class="navbar-brand" href="#">
+                                <img src="./IMG/logo.PNG" alt="">
+                            </a>
+                        </div>
+                        <div class="d-inline-flex ps-5">
+                            <ul class="nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                        id="btn" href="#">Home</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                        id="btn" href="#">Pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                        id="btn" href="#">Blogs</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                        id="btn" href="#">Courses</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  navigation-links" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="container">
+                            <button type="button" class="bg-body fs-5 position-relative border-0">
+                                <i class="fa-regular fa-user fa-xl  border-0"></i>
+                                <span class="account-word d-block">Account</span>
+                            </button>
+                            <button type="button" class="bg-body position-relative border-0 ms-4 fs-5">
+                                <i class="fa-regular fa-heart fa-xl border-0"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                    2
+                                </span>
+                                <span class="account-word d-block">Saved</span>
+                            </button>
+                            <button type="button" class="bg-body fs-5 ms-4 position-relative border-0">
+                                <i class="fa-solid fa-cart-plus fa-xl border-0">
+                                </i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                    3
+                                </span>
+                                <span class="account-word d-block">Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- header for small screen -->
+    <header id="header2">
+        <img src="./IMG/logo.PNG" class="img-fluid pt-4 ps-5" alt="">
+        <i class="fa-solid fa-bars fa-2xl me-5 mt-5 float-end" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <img src="./IMG/logo.PNG" alt="">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="ms-3">
+                    <ul>
+                        <li class="nav-item dropdown mt-4">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mt-4">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Course</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mt-4">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown mt-4">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-5 pe-4">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero-section part -->
+    <section class="hero-section pb-5">
+        <div class="container">
+            <div class="row" id="row-1">
+                <div class="col-lg-6 col-sm-12 text-sm-start">
+                    <div class="hero-content">
+                        <a href="#" class="btn custom-blog-btn1 text-uppercase fw-bold ">Blog</a>
+                        <h1 class="display-3 fw-bold pt-1">Ultimate <br> experiences with <br>story, emotion <br> and
+                            purpose
+                        </h1>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus debitis quaerat,
+                            quisquam facilis tempora ea. Architecto, odio aspernatur a nam unde voluptates cumque,
+                            maxime iusto quod voluptatum repudiandae, quisquam atque?</p>
+                    </div>
+                    <div class="read-more-btn">
+                        <button class="btn btn-primary custom-btn-padding mt-1">Read More</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-lg-block d-none text-center">
+                    <div class="">
+                        <img src="./IMG/man-bg.png" class="img-fluid float-left" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- search bar section -->
+    <section>
+        <div class="container search-bar-section">
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <div class="card p-3 shadow-lg">
+                        <div class="card-body p-0 w-100">
+                            <div class="form-group mt-0 p-2 mb-0 bg-white rounded-lg">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="form-group icon-input mb-0">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                            <input type="text"
+                                                class="style1-input border-0 pl-5 font-xsss ms-1 mb-0 text-grey-500 fw-500 ps-2"
+                                                placeholder="Search online courses..">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="form-group icon-input mb-0">
+                                            <i class="fa-solid fa-cubes"></i>
+                                            <select class="style1-select bg-transparent border-0">
+                                                <option value="">All Categories</option>
+                                                <option value="151781441596 ">Fashion</option>
+                                                <option value="139119624252 ">- Men</option>
+                                                <option value="139118313532 ">- Women</option>
+                                                <option value="139360141372 ">Electronics</option>
+                                                <option value="152401903676 ">Home &amp; Garden</option>
+                                                <option value="138866720828 ">- Decor</option>
+                                                <option value="138866917436 ">- Lighting</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-12">
+                                        <a class="btn btn-primary custom-search-btn">Search</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- card section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h1 class="fw-bolder">Browse
+                        <br> by Category
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+        <!-- <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex flex-wrap justify-content-evenly">
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle">
+                                <img src="./IMG/download1.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle">
+                                <img src="./IMG/download2.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle">
+                                <img src="./IMG/download3.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Jquery</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle">
+                                <img src="./IMG/download4.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">SASS</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle">
+                                <img src="./IMG/download5.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">React</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle d-flex align-items-center justify-content-center">
+                                <img src="./IMG/download6.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Java</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle d-flex align-items-center justify-content-center">
+                                <img src="./IMG/download7.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Python</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                        <div class="card align-items-center p-4 bg-body-secondary card-section mb-2">
+                            <div class="circle d-flex align-items-center justify-content-center">
+                                <img src="./IMG/download7.png" class="" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mongo</h5>
+                                <p>32 Course</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="d-flex flex-wrap justify-content-evenly">
+                                        <div class="card align-items-center p-4 html-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download2.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">HTML</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 jquery-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download3.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Jquery</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 sass-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download4.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">SASS</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 react-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download5.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">React</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 html-bg-color card-section mb-2">
+                                            <div class="circle d-flex align-items-center justify-content-center">
+                                                <img src="./IMG/download6.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Java</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 react-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download5.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">React</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 sass-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download4.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">SASS</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 jquery-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download3.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Jquery</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="d-flex flex-wrap justify-content-evenly">
+                                        <div class="card align-items-center p-4 html-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download2.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">HTML</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 jquery-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download3.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Jquery</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 sass-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download4.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">SASS</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 react-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download5.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">React</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 html-bg-color card-section mb-2">
+                                            <div class="circle d-flex align-items-center justify-content-center">
+                                                <img src="./IMG/download6.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Java</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 react-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download5.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">React</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 sass-bg-color card-section mb-2">
+                                            <div class="circle">
+                                                <img src="./IMG/download4.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">SASS</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                        <div class="card align-items-center p-4 html-bg-color card-section mb-2">
+                                            <div class="circle d-flex align-items-center justify-content-center">
+                                                <img src="./IMG/download6.png" class="" alt="...">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5 class="card-title text-center">Java</h5>
+                                                <p>32 Course</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Online Popular Course -->
+    <section>
+        <div class="container online-course">
+            <div class="row">
+                <h1 class="text-center">Online Popular Course</h1>
+            </div>
+            <div class="row mt-3">
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt
+                    <br>ut labore et dol ad minim veniam, quis nostrud exercitation
+                </p>
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-1.png" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-3">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn">Python</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Python Bootcamp From Zero to Hero in Python</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-2.png" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-3">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn bg-danger-subtle text-danger">Designer</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Python Bootcamp From Zero to Hero in Python</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-3.png" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-3">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn text-success bg">Bootstrap</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Programming Master Class From Zero to Hero</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-5.jpg" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-2">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn">Python</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Python Bootcamp From Zero to Hero in Python</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-6.jpg" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-2">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn">Python</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Python Bootcamp From Zero to Hero in Python</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/v-4.jpg" class="card-img-top" alt="...">
+                            <a href="https://www.youtube.com/watch?v=12qEBzM-yKc"><img src="IMG/icon-play.png"
+                                    class="play-icon" alt=""></a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="d-flex justify-content-between p-2">
+                                <span
+                                    class="card-title alert-warning text-uppercase p-2 px-3 custom-card-btn">Python</span>
+                                <span class="text-end text-success fw-bold fs-5"><span class="doller-sign">$</span>
+                                    2400</span>
+                            </div>
+                            <div class="ps-2">
+                                <span class="fs-5 fw-bold">Complete Programming Master Class From Zero to Hero</span>
+                            </div>
+                            <div class="p-2">
+                                <span class="fw-600 text-grey-500 leasons-text">32 Leasons</span>
+                            </div>
+                            <div>
+                                <ul class="memberlist position-relative mt-3 mb-2 ml-0 d-block ps-2">
+                                    <li><a href="#"><img src="./IMG/user-3.png" alt="user"
+                                                class="w30 d-inline-block"></a></li>
+                                    <li><a href="#"><img src="IMG/user-6.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-7.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li><a href="#"><img src="IMG/user-8.png" alt="user" class="w30 d-inline-block"></a>
+                                    </li>
+                                    <li class="last-member"><a href="#"
+                                            class="bg-greylight fw-600 text-grey-500 font-xssss ls-3 text-center">+2</a>
+                                    </li>
+                                    <li class="ps-4 w-auto "><a href="#"
+                                            class="fw-500 text-grey-500 font-xssss text-decoration-none ">Student
+                                            apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- blog section -->
+    <section>
+        <div class="container blog-container">
+            <div class="row justify-content-center">
+                <div class="col text-center">
+                    <div class="">
+                        <a href="#" class="btn custom-blog-btn text-uppercase fw-bold">Blog</a>
+                        <h2 class="fw-bold pt-4">Dont Miss Out Our Story</h2>
+                        <p class="fw-300 font-xssss lh-28 text-grey-500">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit, sed do eiusmod tempor incididunt<br> ut labore et dol ad minim veniam, quis nostrud
+                            exercitation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/blog-1.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="card-title text-success fw-600 ps-1">Lifestyle</h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-clock "></i><span class="ps-4">24 May 2020</span> </h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-user"></i><span class="ps-4">Jack Robin</span></h6>
+                            </div>
+                            <div class="ps-1 pt-3">
+                                <span class="fs-5 fw-bold">Never the power of a sketch in accomplishing Human
+                                    coronaviruses
+                                    Human coronaviruses</span>
+                            </div>
+                            <div class="pt-3 ps-1">
+                                <p class="fs-6 text-start">Human coronaviruses are common and are typically associated
+                                    with
+                                    mild illnesses, similar to the common cold. We are digital agency.</p>
+                            </div>
+                            <div class="pt-3 ps-1">
+                                <button type="button" class="btn btn-primary read-more-btn2 px-5 py-3">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/blog-2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="card-title text-success fw-600 ps-1">Food</h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-clock "></i><span class="ps-4">24 May 2023</span> </h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-user"></i><span class="ps-4">Jack Robin</span></h6>
+                            </div>
+                            <div class="ps-1 pt-3">
+                                <span class="fs-5 fw-bold">Never the power of a sketch in accomplishing Human
+                                    coronaviruses
+                                    Human coronaviruses</span>
+                            </div>
+                            <div class="pt-3 ps-1">
+                                <p class="fs-6 text-start">Human coronaviruses are common and are typically associated
+                                    with
+                                    mild illnesses, similar to the common cold. We are digital agency.</p>
+                            </div>
+                            <div class="pt-3 ps-1">
+                                <button type="button" class="btn btn-primary read-more-btn2 px-5 py-3">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 pt-3">
+                    <div class="card shadow-lg border-0">
+                        <div class="custom-card-img">
+                            <img src="./IMG/blog-3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="card-title text-success fw-600 ps-1">Lifestyle</h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-clock "></i><span class="ps-4">24 May 2024</span> </h6>
+                                <h6 class="font-xssss text-grey-500 fw-600 ml-3 float-left"><i
+                                        class="fa-regular fa-user"></i><span class="ps-4"> Jack Robin</span></h6>
+                            </div>
+                            <div class="ps-1 pt-3">
+                                <span class="fs-5 fw-bold">Never the power of a sketch in accomplishing Human
+                                    coronaviruses
+                                    Human coronaviruses</span>
+                            </div>
+                            <div class="pt-3">
+                                <p class="fs-6 text-start">Human coronaviruses are common and are typically associated
+                                    with
+                                    mild illnesses, similar to the common cold. We are digital agency.</p>
+                            </div>
+                            <div class="pt-3 ps-1">
+                                <button type="button" class="btn btn-primary read-more-btn2 px-5 py-3">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 99 section -->
+    <section>
+        <div class="container container-99">
+            <div class="row">
+                <div class="col text-center">
+                    <div class="circle-99">
+                        <span class="ninty-text">99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col text-center ">
+                    <h4 class="fw-500 lh-5 font-md mb-3 text-grey-700">Quite simply the best theme we’ve ever purchased.
+                        The <br> customisation and flexibility are superb. Speed is awesome. Not a <br> criticism we can
+                        make. Fun to use the theme, easy installation, <br> super easy to use. Excellent work.”</h4>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col text-center ">
+                    <img src="./IMG/user-3.png" class="rounded-circle" alt="...">
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col text-center ">
+                    <span class="fw-500 fw-bold">Gouria Coast</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center ">
+                    <span class="fw-500 text-grey-500 font-xssss text-decoration-none ">Digital Marketing
+                        Executive</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our pricing section -->
+    <section>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div>
+                        <a href="#" class="btn custom-price-btn text-uppercase fw-bold"><span>Our Pricing</span></a>
+                    </div>
+                    <div>
+                        <h1 class="fw-bold pt-3">Choose the plan that's right for your business</h1>
+                        <p class="fw-300 font-xssss lh-28 text-grey-500 pt-4">orem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol ad minim veniam, quis
+                            nostrud exercitation</p>
+                    </div>
+                    <div>
+                        <span>Bill Montly</span> <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label> <span>Bill Anually</span>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-sm-12 offset-lg-1 pt-3">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card shadow bg-body rounded border-0">
+                                <div class="card-body bg-primary rounded text-white p-5">
+                                    <span>Free</span>
+                                    <h1 class="card-title fw-bold custom-card-title">€ 0</h1>
+                                    <span class="card-data pt-3">For anyone validating Framer as a professional
+                                        prototyping tool.</span>
+                                    <ul class="ps-0 pt-3">
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Ultimated viwes</span></li>
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Everthing is free</span></li>
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Private shear link</span></li>
+                                    </ul>
+                                    <div>
+                                        <a href="#"
+                                            class="bg-white border-0 btn btn-block btn-light d-inline-block font-xssss fw-600 p-3 rounded-lg text-primary w-100">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card shadow bg-body rounded border-0">
+                                <div class="card-body rounded bg-white text-black p-5">
+                                    <span>Standard</span>
+                                    <h1 class="card-title fw-bold custom-card-title">€ 49</h1>
+                                    <span class="card-data pt-3">For anyone validating Framer as a professional
+                                        prototyping tool.</span>
+                                    <ul class="ps-0 pt-3">
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Ultimated viwes</span></li>
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Everthing is free</span></li>
+                                        <li class="card-data p-1"><i class="fa-solid fa-check"></i><span
+                                                class="card-data ps-3">Private shear link</span></li>
+                                    </ul>
+                                    <div>
+                                        <a href="#"
+                                            class="bg-primary border-0 btn btn-block btn-light d-inline-block font-xssss fw-600 p-3 rounded-lg text-white w-100">Subscribe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- logo slider -->
+    <section>
+        <div class="container pt-5 ">
+            <div class="row " style="padding-top: 33px;">
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <img src="./IMG/slack.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./IMG/paypal.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./IMG/spotify.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./IMG/sketch.png" class="img-fluid" alt="">
+                    </div>
+                    <div>
+                        <img src="./IMG/amazon.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class=" text-grey-300 footer-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12 text-start">
+                    <h4 class="d-inline-block font-xl fw-300 lh-3 mb-4 open-font text-grey-300">We are digital agency, a
+                        small design agency based in paris as i was groping to remove the chain from about my victim’s
+                        neck only through language.</h4>
+                </div>
+                <div class="col-sm-6 text-start">
+                    <ul class="d-flex align-items-center list-unstyled mt-2 float-left xs-mb-2">
+                        <li class="me-2"><a href="#" class="btn-round-md bg-facebook"><i
+                                    class="fab fa-facebook-f text-white font-xs"></i></a></li>
+                        <li class="me-2"><a href="#" class="btn-round-md bg-twitter"><i
+                                    class="fab fa-twitter text-white font-xs"></i></a></li>
+                        <li class="me-2"><a href="#" class="btn-round-md bg-linkedin"><i
+                                    class="fab fa-linkedin text-white font-xs"></i></a></li>
+                        <li class="me-2"><a href="#" class="btn-round-md bg-instagram"><i
+                                    class="fab fa-instagram text-white font-xs"></i></a></li>
+                        <li class="me-2"><a href="#" class="btn-round-md bg-whtasapp"><i
+                                    class="fab fa-whatsapp text-white font-xs"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5 offset-sm-1 text-end">
+                    <form action="#" class="mt-2">
+                        <input type="text" placeholder="Email">
+                        <button class="">Submit</button>
+                    </form>
+                </div>
+                <div class="col-sm-12">
+                    <div class="middle-footer">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6 sm-mb-4">
+                                <h5 class="p-0">Social Link</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">Facebook</a></li>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Instagram</a></li>
+                                    <li><a href="#">Youtube</a></li>
+                                    <li><a href="#">Dribble</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6 sm-mb-4">
+                                <h5>Online</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">Web</a></li>
+                                    <li><a href="#">Series</a></li>
+                                    <li><a href="#">Natak</a></li>
+                                    <li><a href="#">Comedy</a></li>
+                                    <li><a href="#">Action</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6 sm-mb-4">
+                                <h5>Language</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Spanish</a></li>
+                                    <li><a href="#">Arab</a></li>
+                                    <li><a href="#">Urdu</a></li>
+                                    <li><a href="#">Brazil</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6">
+                                <h5>Channel</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">Makeup</a></li>
+                                    <li><a href="#">Dresses</a></li>
+                                    <li><a href="#">Girls</a></li>
+                                    <li><a href="#">Sandals</a></li>
+                                    <li><a href="#">Headphones</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6">
+                                <h5>About</h5>
+                                <ul class="p-0">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Term of use</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-6">
+                                <h5 class="mb-3">Office</h5>
+                                <p style="width: 100%;">41 madison ave, floor 24 new work, NY 10010 <br>1-877-932-7111
+                                </p>
+                                <p style="width: 100%;">41 madison ave, floor 24 new work, NY 10010 <br>1-877-932-7111
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 lower-footer"></div>
+                </div>
+                <div class="col-sm-6">
+                    <p class="copyright-text">© 2021 copyright. All rights reserved.</p>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <p class="float-right copyright-text">In case of any concern, <a href="#">contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

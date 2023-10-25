@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+  <header id="header1">
+    <div class="container-fluid">
+      <div class="pt-4">
+        <div class="d-flex justify-content-around">
+          <div>
+            <div class="">
+              <div class="d-inline-flex">
+                <a class="navbar-brand" href="#">
+                  <img src="./IMG/logo-black.png" alt="Logo" class="d-inline-block align-text-top">
+                </a>
+                <div class="btn-group" id="category-box">
+                  <button class="btn btn-default btn-lg dropdown-toggle ms-2" id="btn" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i> Category
+                  </button>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+
+                <div class="d-inline-flex pt-1">
+                  <ul class="nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Home</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Course</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Shop</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Pages</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex align-items-center justify-content-around">
+            <div class="input-group rounded me-3" id="search-bar">
+              <input type="search" class="form-control rounded py-3 px-5" placeholder="Search Course..."
+                aria-label="Search" aria-describedby="search-addon" />
+              <span class="input-group-text  bg-white" id="search-addon">
+                <i class="fas fa-search text-primary"></i>
+              </span>
+            </div>
+            <div class="me-3">
+              <button type="button" class=" position-relative border-0">
+                <i class="fa-solid fa-cart-plus fa-xl border-0">
+                </i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                  3
+                </span>
+              </button>
+            </div>
+            <div class="container">
+              <a href="#" class="mx-2 text-black fs-5 text-decoration-none">Sign In</a>
+              <a href="#" class=" mx-3 px-5 py-3 bg-primary text-light text-decoration-none">Sign Up</a>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </header>
+
+
+  <header id="header2">
+
+    <img src="./IMG/logo-black.png" class="img-fluid mt-4" alt="">
+
+    <i class="fa-solid fa-bars fa-2xl me-5 mt-5 float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"></i>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <img src="./IMG/logo-black.png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mt-5">
+          <div class="btn-group" id="category-box">
+            <button class="btn btn-default btn-lg dropdown-toggle border" id="btn" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </button>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ms-3">
+          <ul>
+            <li class="nav-item dropdown mt-4">
+              <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Home</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mt-4">
+              <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Course</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mt-4">
+              <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mt-4">
+              <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" href="#">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-5 pe-4">
+          <div class="input-group rounded">
+            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section>
+    <div>
+      <div class="row m-0">
+        <div class="col-12">
+          <div class="position-relative">
+            <div><img src="IMG/Image.jpg" alt="" class="img-fluid d-none d-md-block"></div>
+            <div class="hero-center d-none d-md-block">
+              <div class="">
+                <h5>Discover your Journey</h5>
+              </div>
+              <div class="">
+                <h1>Discover 4500+ Courses <br> from top Instructors <br> Around the World</h1>
+              </div>
+              <div class="">
+                <p>Take your learning organization to the next level. to the next level. Who'll <br> share their
+                  knowledge to people around the world.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary py-3 px-5 hero-btn">Viwe All Course</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-section-content" class="pt-5">
+      <div class="text-center">
+        <h5>Discover your Journey</h5>
+        <h1>Discover 4500+ Courses <br> from top Instructors <br> Around the World</h1>
+        <p>Take your learning organization to the next level. to the next level. Who'll <br> share their
+          knowledge to people around the world.</p>
+        <button type="button" class="btn btn-primary py-3 px-5 hero-btn">Viwe All Course</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5">
+      <div class="row text-center">
+        <h1 class="text-black font-weight-bold mt-5 pt-5 py-1">Explore</h1>
+        <h1 class="text-black font-weight-bold">Our Top Categories</h1>
+      </div>
+      <div class="pt-5">
+        <div class="row pt-2">
+          <div class="col-xl-4 col-sm-12  p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-code fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Development</h4>
+                  <p>Take Your Journy with this course</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12  p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-briefcase fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Bussiness</h4>
+                  <p>Take Your Journy with this course</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12  p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-database fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Database</h4>
+                  <p>Take Your Journy with this course</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-xl-4 col-sm-12 p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-square-poll-horizontal fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Marketing</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12 p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-hand-holding-heart fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Life Style</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12 p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-photo-film fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Photography</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div class="col-xl-4 col-sm-12  p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-paintbrush fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Art & Design</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12  p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-heart-pulse fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Health & Fitness</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12 p-1">
+            <div class="cate-content me-4">
+              <div class="d-flex justify-content-evenly align-items-center mt-3">
+                <div class="fs-2">
+                  <i class="fa-solid fa-music fa-2xl text-primary"></i>
+                </div>
+                <div class="">
+                  <h4 class="text-black font-weight-bold">Music</h4>
+                  <p>Take up your self in the next level</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid pt-5 pb-5 mt-5 bg-body-secondary">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col text-black">
+            <h1>Discover</h1>
+            <h1>World Best Course</h1>
+          </div>
+          <div class="col">
+            <div class="section3-div">
+              <ul class="ms-5">
+                <li><a href="#" class="ms-4">View All</a></li>
+                <li><a href="#" class="ms-4">Devlopment</a></li>
+                <li><a href="#" class="ms-4">Marketing</a></li>
+                <li><a href="#" class="ms-4">Music</a></li>
+                <li><a href="#" class="ms-4">Life Style</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center pt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-sm-12 pt-5">
+              <div class="div">
+                <div class="card">
+                  <img src="./IMG/course-img-03.jpg" class="img-fluid card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col text-start">
+                          <h6 class="text-primary">Development</h6>
+                        </div>
+                        <div class="col text-end"><i class="fas fa-star text-warning"> 4.9</i> (25)</div>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem.</h5>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <h5 class="text-primary">FREE</h5>
+                      </div>
+                      <div class="row pt-3">
+                        <div>
+                          <img src="./IMG/course-tutor-01.png" alt=""> <span class=" img-fluid ms-2">Johan Simth</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-6 py-3 px-4 border d-flex align-items-center">
+                          <h6 class="m-0 p-0"><i class="fa-solid fa-table-columns"></i> 12 Lesons</h6>
+                        </div>
+                        <div class="col-6 text-end py-3 px-4 border d-flex align-items-center justify-content-end">
+                          <a href="#" class="text-decoration-none text-primary text-end">View Details </a>
+                          <i class="fa-solid fa-arrow-right text-primary "></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-12 pt-5">
+              <div class="div">
+                <div class="card w-100">
+                  <img src="./IMG/course-img-02.jpg" class="card-img-top img-fluid" alt="...">
+                  <div class="card-body">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col text-start">
+                          <h6 class="text-success">Development</h6>
+                        </div>
+                        <div class="col text-end"><i class="fas fa-star text-warning"> 4.9</i> (25)
+                        </div>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem.</h5>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <div class="col">
+                          <div>
+                            <span class="text-primary font-weight-bold fs-5">$47.00</span>&nbsp;
+                            <span class="text-decoration-line-through text-start fs-5">$49.00</span>
+                          </div>
+
+                        </div>
+                        <div class="col">
+
+                        </div>
+                        <div class="row pt-3">
+                          <div>
+                            <img src="./IMG/course-tutor-04.png" alt=""> <span class="img-fluid ms-2">Dora
+                              Peterson</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-6 py-3 px-4 border d-flex align-items-center">
+                          <h6 class="m-0 p-0"><i class="fa-solid fa-table-columns"></i> 12 Lesons</h6>
+                        </div>
+                        <div class="col-6 text-end py-3 px-4 border d-flex align-items-center justify-content-end">
+                          <a href="#" class="text-decoration-none text-primary text-end">View Details </a>
+                          <i class="fa-solid fa-arrow-right text-primary "></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-12 pt-5">
+              <div class="div">
+                <div class="card">
+                  <img src="./IMG/course-img-01.jpg" class="img-fluid card-img-top" alt="...">
+                  <div class="card-body">
+                    <div class="container pt-3">
+                      <div class="row">
+                        <div class="col text-start">
+                          <h6 class="text-warning">Business</h6>
+                        </div>
+                        <div class="col text-end"><i class="fas fa-star text-warning"> 4.9</i> (25)</div>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, exercitationem.</h5>
+                      </div>
+                      <div class="row text-dark mt-2">
+                        <h5 class="text-primary font-weight-bold">$47.00</h5>
+                      </div>
+                      <div class="row pt-3">
+                        <div>
+                          <img src="./IMG/course-tutor-03.png" alt=""> <span class="img-fluid ms-2">Mark Hanrey</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-6 py-3 px-4 border d-flex align-items-center">
+                          <h6 class="m-0 p-0"><i class="fa-solid fa-table-columns"></i> 12 Lesons</h6>
+                        </div>
+                        <div class="col-6 text-end py-3 px-4 border d-flex align-items-center justify-content-end">
+                          <a href="#" class="text-decoration-none text-primary text-end">View Details </a>
+                          <i class="fa-solid fa-arrow-right text-primary "></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <div class="row">
+              <div class="d-flex align-content-center ">
+                <div class="pt-3 blue-area-icon">
+                  <i class="fa-solid fa-user-graduate fa-xl bg-transparent text-white fs-1"></i>
+                </div>
+                <div class="ms-3 blue-area">
+                  <h3 class="bg-transparent text-white">Learn with skills over <br>2,420 courses</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="row">
+              <div class="d-flex align-content-center ">
+                <div class="pt-3">
+                  <i class="fa-solid fa-user-graduate fa-xl bg-transparent text-white fs-1"></i>
+                </div>
+                <div class="ms-3 blue-area">
+                  <h3 class="bg-transparent text-white">Learn with skills over <br>2,420 courses</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4">
+            <div class="row">
+              <div class="d-flex align-content-center ">
+                <div class="pt-3">
+                  <i class="fa-solid fa-user-graduate fa-xl bg-transparent text-white fs-1"></i>
+                </div>
+                <div class="ms-3 blue-area">
+                  <h3 class="bg-transparent text-white">Learn with skills over <br>2,420 courses</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section>
+    <div class="container student-container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5">
+          <div class="text-black">
+            <h1>Why Students Choose Us for </h1>
+            <h1> Gain Their Knowledge</h1>
+          </div>
+          <div class="mt-5">
+            <p class="text-black">Helping employees gain skills and providing career development often take a back seat
+              to business priorities but workplace better right now. Seventy percent of workers think that.</p>
+          </div>
+          <div class="text-start me-4 mt-4 text-black">
+            <ul class="p-0 text-black" style="list-style-type: none;">
+              <li class="mt-3 text-black"><i class="fa-regular fa-circle-check"></i> Free for physically handcraft</li>
+              <li class="mt-3 text-black"><i class="fa-regular fa-circle-check"></i> Easy to enroll courses</li>
+              <li class="mt-3 text-black"><i class="fa-regular fa-circle-check"></i> Course certificate for particular
+                course</li>
+            </ul>
+          </div>
+          <div class="pt-4">
+            <button type="button" class="btn btn-outline-primary px-5 py-3">More about us</button>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2">
+          <div class="student-wrapper position-relative">
+            <div class="box1">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-5 col-lg-5 mt-3">
+          <div class="student-choose-wrapper position-relative">
+            <div class="box2">
+              <img src="./IMG/student.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="testimonial-area">
+      <div class=" container">
+        <div class="row text-center text-black ">
+          <h2 class="fw-bold">What Students</h2>
+          <h2 class="fw-bold">Think and Say About Eduman</h2>
+        </div>
+      </div>
+      <div class="container pt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card  py-3">
+              <div class="card-body d-flex justify-content-between">
+                <img src="./IMG/New folder/testimonial.png" class="" alt="...">
+                <div class="col-4">
+                  <h6 class="fw-bold">Richard Joseph</h6>
+                  <span>Student</span>
+                </div>
+                <div class="col-5">
+                  <img src="./IMG//New folder/quotes.png" alt="">
+                </div>
+              </div>
+              <div class="card-title m-3">
+                <h5 class="text-primary fw-bold">Best Exprieance</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad, numquam temporibus natus
+                  laudantium officia explicabo praesentium neque ea vel, saepe aut veritatis ex quo, impedit iste labore
+                  at aspernatur.</p>
+              </div>
+              <div class="mb-5 m-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card  py-3">
+              <div class="card-body d-flex justify-content-between">
+                <img src="./IMG/New folder/testimonial.png" class="" alt="...">
+                <div class="col-4 ">
+                  <h6 class="fw-bold">Richard Joseph</h6>
+                  <span>Student</span>
+                </div>
+                <div class="col-5">
+                  <img src="./IMG//New folder/quotes.png" alt="">
+                </div>
+              </div>
+              <div class="card-title m-3">
+                <h5 class="text-primary fw-bold">Best Exprieance</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad, numquam temporibus natus
+                  laudantium officia explicabo praesentium neque ea vel, saepe aut veritatis ex quo, impedit iste labore
+                  at aspernatur.</p>
+              </div>
+              <div class="mb-5 m-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card  py-3">
+              <div class="card-body d-flex justify-content-between">
+                <img src="./IMG/New folder/testimonial.png" class="" alt="...">
+                <div class="col-4 ">
+                  <h6 class="fw-bold">Richard Joseph</h6>
+                  <span>Student</span>
+                </div>
+                <div class="col-5">
+                  <img src="./IMG//New folder/quotes.png" alt="">
+                </div>
+              </div>
+              <div class="card-title m-3">
+                <h5 class="text-primary fw-bold">Best Exprieance</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad, numquam temporibus natus
+                  laudantium officia explicabo praesentium neque ea vel, saepe aut veritatis ex quo, impedit iste labore
+                  at aspernatur.</p>
+              </div>
+              <div class="mb-5 m-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 pt-5 position-relative">
+          <img src="IMG/browser-course-01.jpg" alt="" class="img-fluid">
+          <div class="pt-5  content-text">
+            <div class=" ">
+              <span class="text-primary">Start From Today</span>
+              <h5 class="pt-3">Become an instructor and <br> spread your knowledge </h5>
+            </div>
+            <div class="content-btn">
+              <button type="button" class="btn btn-primary py-2 px-4 ">View Details</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 pt-5  position-relative">
+          <img src="./IMG/browser-course-02.jpg" alt="" class="img-fluid">
+          <div class=" content-text">
+            <div class="pt-5">
+              <span class="text-primary">Discover your gain</span>
+              <h5 class="pt-3">Keep your skilled centers of <br> excellence competitive</h5>
+            </div>
+            <div class="content-btn">
+              <button type="button" class="btn btn-primary py-2 px-4 ">Browse Course</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <div class="container eud-section-img">
+            <img src="./IMG/education.png" alt="" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div class="mt-3">
+            <h1 class="">Transform Your Life <br> Through Education</h1>
+            <p class=" mt-5">Helping employees gain skills and providing career development
+              <br>often take a back seat to business priorities <br> but workplace.
+            </p>
+          </div>
+          <div class=" mt-5">
+            <button type="button" class="btn btn-outline-primary py-3 px-5">Watch how to start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-01.png" alt="" srcset="">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-02.png" alt="" srcset="">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-03.png" alt="" srcset="">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-04.png" alt="" srcset="">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-05.png" alt="" srcset="">
+        </div>
+        <div class="col-sm-4 col-lg-2">
+          <img src="./IMG/brand/brand-06.png" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid bg-black text-secondary mt-5">
+      <div class="container">
+        <div class="row ">
+          <div class="container ">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6 mt-5 pe-3">
+                <div class="footer-container-col pe-5">
+                  <div>
+                    <img src="./IMG/footer-logo.png" alt="">
+                  </div>
+                  <div class="mt-3">
+                    <p>Great lesson ideas and lesson plans for ESL teachers! Educators can customize lessons as best
+                      plans
+                      to
+                      knowledge.</p>
+                  </div>
+                  <div class="footer-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="footer-container-col">
+                  <div class="footer-widget">
+                    <h3 class="ms-4 text-white">Online Platform</h3>
+                    <ul class="mt-3">
+                      <li><a href="#">Proper Guidelines</a></li>
+                      <li><a href="#">Digital Library</a></li>
+                      <li><a href="#">Compare Us</a></li>
+                      <li><a href="#">Become Instructor</a></li>
+                      <li><a href="#">Build Career</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="footer-container-col">
+                  <div class="footer-widget">
+                    <h3 class="ms-4 text-white">Browse Courses</h3>
+                    <ul class="mt-3">
+                      <li><a href="#">Development</a></li>
+                      <li><a href="#">Business</a></li>
+                      <li><a href="#">Health & Fitness</a></li>
+                      <li><a href="#">Life Styles</a></li>
+                      <li><a href="#">Photography</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="footer-container-col">
+                  <div class="footer-widget">
+                    <h3 class="ms-4 text-white">Insight Community</h3>
+                    <ul class="mt-3">
+                      <li><a href="#">Global Partners</a></li>
+                      <li><a href="#">Forum</a></li>
+                      <li><a href="#">Help & Support</a></li>
+                      <li><a href="#">Community</a></li>
+                      <li><a href="#">Documentation</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container copyright-container mt-5 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-sm-12 pt-2">
+              <div class="">
+                <div>
+                  <span>© Copyrighted and  Designed
+                    by <a href="https://themeforest.net/user/bdevs"><span>BDevs</span></a> </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 ps-2 applay-border pt-2">
+              <div class="ps-sm-5 row">
+                <div class="col-4 fs-3 pt-3 text-center">
+                  <i class="fa-solid fa-headset fa-2xl"></i>
+                </div>
+                <div class="col-8">
+                  <span>Have a question? Call us 24/7</span>
+                  <span class=" text-white subscribe-btn">9623933599</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 ps-2 applay-border pt-2">
+              <div class="copyright-subcribe ps-sm-5">
+                <form action="#" class="widget__subscribe">
+                  <div class="field">
+                    <input type="email" placeholder="Enter Email">
+                  </div>
+                  <div>
+                    <button type="submit">Subscribe<i class="fas fa-paper-plane"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script src="./JS/script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- header-section -->
+    <header>
+        <div class="header-top p-3" id="header-top">
+            <div class="container">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="header-top-left fw-bold">
+                        <ul class="m-0">
+                            <li><i class="fa-regular fa-envelope"></i> <a href=""> info@example.com</a></li>
+                            <li><i class="fa-solid fa-phone-volume"></i> <a href=""> +9623933599</a></li>
+                            <li><i class="fa-solid fa-clock"></i> <a href=""> Sun - Fri (08AM - 10PM)</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-top-right fw-bold ">
+                        <ul class="m-0">
+                            <li><i class="fa-solid fa-arrow-right-to-bracket"></i> <a href=""> Login</a></li>
+                            <li><i class="fa-regular fa-user"></i> <a href=""> Register</a></li>
+                            <li><a href=""> Follow Us :</a>
+                                <i class="fa-brands fa-facebook ms-3"></i>
+                                <i class="fa-brands fa-twitter ms-3"></i>
+                                <i class="fa-brands fa-instagram ms-3"></i>
+                                <i class="fa-brands fa-linkedin ms-3"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main header -->
+    <div class="container" id="main-header">
+        <nav class="navbar navbar-expand-lg pt-2">
+            <a class="navbar-brand" href="#"><img src="./IMG/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse me-4  p-0 " id="navbarSupportedContent">
+                <ul class="nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" id="btn"
+                            href="#">Home</a>
+                        <ul class="dropdown-menu dropdown-content z-3 ">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  navigation-links" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" id="btn"
+                            href="#">Taxi</a>
+                        <ul class="dropdown-menu dropdown-content z-3">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" id="btn"
+                            href="#">Service</a>
+                        <ul class="dropdown-menu dropdown-content z-3">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" id="btn"
+                            href="#">Page</a>
+                        <ul class="dropdown-menu dropdown-content z-3">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown" id="btn"
+                            href="#">Blog</a>
+                        <ul class="dropdown-menu dropdown-content z-3">
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  navigation-links" href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="d-flex navbar-right-text align-items-center ">
+                <div class="search-icon fs-5">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="">
+                    <a href="" class="btn book-taxi-btn"> <i class="fa-solid fa-taxi"></i> Book A Taxi</a>
+                </div>
+                <div class="bars fs-5">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- header for small screen -->
+    <header id="main-header2">
+        <img src="./IMG/logo.PNG" class="img-fluid pt-4 ps-5" alt="">
+        <i class="fa-solid fa-bars fa-2xl me-5 mt-5 float-end" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <img src="./IMG/logo.PNG" alt="">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="">
+                    <ul>
+                        <li class="nav-item dropdown  list-unstyled ">
+                            <a class="nav-link dropdown-toggle navigation-links " data-bs-toggle="dropdown"
+                                href="#">Home</a>
+                            <ul class="dropdown-menu  ">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown  list-unstyled ">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Course</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown  list-unstyled">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown  list-unstyled">
+                            <a class="nav-link dropdown-toggle navigation-links" data-bs-toggle="dropdown"
+                                href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- slider-section -->
+    <section>
+        <div class="position-relative">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="bg-img-one">
+                        </div>
+                        <div class="container text-center hero-content hero-single pb-5">
+                            <h5 class="hero-sub-title">Welcome to Taxica</h5>
+                            <h1 class="hero-title">
+                                Book <span class="text-warning">Taxi</span> For Your Ride
+                            </h1>
+                            <p class="paragrap-txt">
+                                There are many variations of passages available the majority have suffered
+                                alteration in some form generators on the Internet tend to repeat predefined
+                                chunks injected humour randomised words look even slightly believable.
+                            </p>
+                            <div class="hero-btn justify-content-center">
+                                <a href="#" class="theme-btn">About More<i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="theme-btn theme-btn2">Learn More<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-img-two">
+                        </div>
+                        <div class="container text-center hero-content hero-single pb-5">
+                            <h5 class="hero-sub-title">Welcome to Taxica</h5>
+                            <h1 class="hero-title">
+                                Book <span class="text-warning">Taxi</span> For Your Ride
+                            </h1>
+                            <p class="paragrap-txt">
+                                There are many variations of passages available the majority have suffered
+                                alteration in some form generators on the Internet tend to repeat predefined
+                                chunks injected humour randomised words look even slightly believable.
+                            </p>
+                            <div class="hero-btn justify-content-center">
+                                <a href="#" class="theme-btn">About More<i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="theme-btn theme-btn2">Learn More<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-img-three">
+                        </div>
+                        <div class="container text-center hero-content hero-single pb-5">
+                            <h5 class="hero-sub-title">Welcome to Taxica</h5>
+                            <h1 class="hero-title">
+                                Book <span class="text-warning">Taxi</span> For Your Ride
+                            </h1>
+                            <p class="paragrap-txt">
+                                There are many variations of passages available the majority have suffered
+                                alteration in some form generators on the Internet tend to repeat predefined
+                                chunks injected humour randomised words look even slightly believable.
+                            </p>
+                            <div class="hero-btn justify-content-center">
+                                <a href="#" class="theme-btn">About More<i class="fas fa-arrow-right"></i></a>
+                                <a href="#" class="theme-btn theme-btn2">Learn More<i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- booking-area -->
+    <section>
+        <div class="booking-area container">
+            <div class="container ">
+                <div class="booking-form">
+                    <h4 class="booking-title fw-bold">Book Your Ride</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 position-relative">
+                        <label for="inputEmail4" class="form-label fs-5">Pick Up Location</label>
+                        <input type="text" class="form-control py-3" id="inputEmail4" placeholder="Type Location">
+                        <i class="fa-solid fa-location-dot p-location-icon"></i>
+                    </div>
+                    <div class="col-lg-3 col-sm-12  position-relative">
+                        <label for="inputPassword4" class="form-label fs-5">Drop Location</label>
+                        <input type="text" class="form-control py-3" id="inputPassword4" placeholder="Type Location">
+                        <i class="fa-solid fa-location-dot p-location-icon"></i>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 position-relative">
+                        <label for="inputEmail4" class="form-label fs-5">Passengers</label>
+                        <input type="text" class="form-control py-3" id="inputEmail4" placeholder="Passengers">
+                        <i class="fa-solid fa-ticket p-location-icon"></i>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 position-relative">
+                        <i class="fa-solid fa-angle-down  p-location-icon"></i>
+                        <label for="inputPassword4" class="form-label fs-5">Cab Type</label>
+                        <select name="pets" id="pet-select" class="form-control py-3" placeholder="Choose Cab">
+                            <option><span class="choose-cab">Choose Cab</span></option>
+                            <option value="dog">One</option>
+                            <option value="cat">Two</option>
+                            <option value="hamster">Three</option>
+                            <option value="parrot">Four</option>
+                            <option value="spider">Five</option>
+                            <option value="goldfish">Six</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-lg-3 col-sm-12 position-relative">
+                        <label for="inputEmail4" class="form-label fs-5">Pick Up Date</label>
+                        <input type="date" class="form-control py-3">
+                    </div>
+                    <div class="col-lg-2 col-sm-12 position-relative">
+                        <label for="inputEmail4" class="form-label fs-5">Pick Up Time</label>
+                        <input type="text" class="form-control py-3" id="inputEmail4" placeholder="00.00 AM">
+                        <i class="fa-regular fa-clock time-icon"></i>
+                    </div>
+                    <div class="col-lg-2 col-sm-12 position-relative">
+                        <i class="fa-solid fa-angle-down time-icon"></i>
+                        <label for="inputPassword4" class="form-label fs-5">Choose Age</label>
+                        <select name="pets" id="pet-select" class="form-control py-3" placeholder="Choose Cab">
+                            <option><span class="choose-cab">Choose Age</span></option>
+                            <option value="dog">21</option>
+                            <option value="cat">25</option>
+                            <option value="hamster">26</option>
+                            <option value="parrot">27</option>
+                            <option value="spider">28</option>
+                            <option value="goldfish">29</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 position-relative">
+                        <i class="fa-solid fa-angle-down  p-location-icon"></i>
+                        <label for="inputPassword4" class="form-label fs-5">Cab Model</label>
+                        <select name="pets" id="pet-select" class="form-control py-3" placeholder="Choose Cab">
+                            <option><span class="choose-cab">Cab Model</span></option>
+                            <option value="dog">One</option>
+                            <option value="cat">Two</option>
+                            <option value="hamster">Three</option>
+                            <option value="parrot">Four</option>
+                            <option value="spider">Five</option>
+                            <option value="goldfish">Six</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-sm-4 align-self-end pt-3">
+                        <button class="btn btn-warning book-taxi-btn py-3 px-5" type="submit">Book Taxi<i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About-section -->
+    <section>
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 position-relative">
+                    <img src="./IMG/01.png" class="img-fluid" alt="">
+                    <div class="about-experience">
+                        <div class="about-experience-icon">
+                            <img src="IMG/taxi-booking.svg" alt="">
+                        </div>
+                        <b>30 Years Of <br> Quality Service</b>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="about-right wow fadeInRight" data-wow-delay=".25s"
+                        style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
+                        <div class="site-heading mb-3">
+                            <span class="site-title-tagline justify-content-start">
+                                <i class="flaticon-drive"></i> About Us
+                            </span>
+                            <h2 class="site-title">
+                                We Provide Trusted <span>Cab Service</span> In The World
+                            </h2>
+                        </div>
+                        <p class="about-text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour.
+                        </p>
+                        <div class="about-list-wrapper">
+                            <ul class="about-list list-unstyled p-0">
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span class="ps-2"> At vero eos et accusamus et iusto odio.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span class="ps-2">Established fact that a reader will be distracted.</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    <span class="ps-2">Sed ut perspiciatis unde omnis iste natus sit.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-4">
+                            <a href="#" class="theme-btn mt-4">Discover More<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services-section -->
+    <section>
+        <div class="container-fluid bg-light service-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 text-center">
+                        <span class="site-title-tagline">Services</span>
+                        <h2 class="site-title">Our Best Services For You</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/01.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/02.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/03.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/04.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/05.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 pt-5">
+                        <div class="fadeInUp service-item wow" data-wow-delay=".25s"
+                            style="visibility: visible;animation-delay: 0.25s;animation-name: fadeInUp;">
+                            <div class="service-img">
+                                <img src="IMG/service/06.jpg" alt="">
+                            </div>
+                            <div class="service-icon">
+                                <img src="IMG/taxi-booking-1.svg" alt="">
+                            </div>
+                            <div class="service-content">
+                                <h3 class="service-title">
+                                    <a href="#">Online Booking</a>
+                                </h3>
+                                <p class="service-text text-body-tertiary">
+                                    There are many variations of passages orem psum available but the majority have
+                                    suffered alteration in some form by injected.
+                                </p>
+                                <div class="pb-4 pt-4 service-arrow">
+                                    <a href="#" class="theme-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR TAXI-section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="site-heading text-center">
+                        <span class="site-title-tagline">Our Taxi</span>
+                        <h2 class="site-title">Let's Check Available Taxi</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="filter-controls">
+                    <ul class="filter-btns">
+                        <li class="active" data-filter="*">All Taxi</li>
+                        <li data-filter=".cat1" class="">Hybrid Taxi</li>
+                        <li data-filter=".cat2" class="">Town Taxi</li>
+                        <li data-filter=".cat3" class="">Suv Taxi</li>
+                        <li data-filter=".cat4" class="">Limousine Taxi</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row filter-box" style="position: relative;">
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat1 cat2">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat1 cat2 cat3">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat4" top: 0%;">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row filter-box" style="position: relative;">
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat1 cat2">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat1 cat2 cat3">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-md-6 filter-item cat4">
+                    <div class="taxi-item">
+                        <div class="taxi-img">
+                            <img src="IMG/taxsi/01.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="taxi-content">
+                            <div class="taxi-head">
+                                <h4>BMW M5 2019 Model</h4>
+                                <span>$1.25/km</span>
+                            </div>
+                            <div class="taxi-feature">
+                                <ul>
+                                    <li><i class="fa-solid fa-taxi"></i>Taxi Doors: <span>4</span></li>
+                                    <li><i class="fa-solid fa-ship"></i> Passengers: <span>4</span></li>
+                                    <li><i class="fa-solid fa-person-walking-luggage"></i> Luggage Carry: <span>2</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-fan"></i>Air Condition: <span>Yes</span></li>
+                                    <li><i class="fa-solid fa-location-crosshairs"></i>GPS Navigation: <span>Yes</span>
+                                    </li>
+                                    <li><i class="fa-solid fa-user-secret"></i> Driver Choosing: <span>Yes</span></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="theme-btn d-block">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- feature-section -->
+    <section>
+        <div class="counter-area">
+            <div class="container p-100">
+                <div class="counter-wrapper">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon">
+                                    <img src="img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="500" data-speed="3000">17</span>
+                                    <h6 class="title">+ Available Taxi </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon">
+                                    <img src="img/icon/happy.svg" alt="">
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="900" data-speed="3000">30</span>
+                                    <h6 class="title">+ Happy Clients</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon">
+                                    <img src="img/icon/driver.svg" alt="">
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="700" data-speed="3000">23</span>
+                                    <h6 class="title">+ Our Drivers</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="counter-box">
+                                <div class="icon">
+                                    <img src="img/icon/trip.svg" alt="">
+                                </div>
+                                <div>
+                                    <span class="counter" data-count="+" data-to="1800" data-speed="3000">60</span>
+                                    <h6 class="title">+ Road Trip Done</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="feature-area feature-bg py-120">
+            <div class="container mt-150">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Feature</span>
+                            <h2 class="site-title text-white">Our Awesome Feature</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                            <div class="feature-icon">
+                                <img src="./IMG/icon/taxi-safety.svg" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Safety Guarantee</h4>
+                                <p>There are many variations of majority have suffered alteration in some form injected
+                                    humour randomised words.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-item mt-lg-5 wow fadeInDown" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+                            <div class="feature-icon">
+                                <img src="./IMG/icon/pickup.svg" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fast Pickup</h4>
+                                <p>There are many variations of majority have suffered alteration in some form injected
+                                    humour randomised words.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                            <div class="feature-icon">
+                                <img src="./IMG/icon/trip.svg" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>Affordable Rate</h4>
+                                <p>There are many variations of majority have suffered alteration in some form injected
+                                    humour randomised words.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-item mt-lg-5 wow fadeInDown" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+                            <div class="feature-icon">
+                                <img src="./IMG/icon/support.svg" alt="">
+                            </div>
+                            <div class="feature-content">
+                                <h4>24/7 Support</h4>
+                                <p>There are many variations of majority have suffered alteration in some form injected
+                                    humour randomised words.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- taxi-rate-section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center p-100">
+                    <span class="taxi-rate-title">Taxi Rate</span>
+                    <h2 class="site-title">Our Taxi Rate For You</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 pt-4">
+                    <div class="card border-0 shadow rounded-4">
+                        <img class="card-img-top fw-medium p-4" src="./IMG/tt.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">BASIC PAKAGE</h4>
+                            <p class="rate-duration pb-5">One Time Payment</p>
+                            <div class="rate-content pt-5">
+                                <div class="rate-icon">
+                                    <img src="img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div class="rate-feature">
+                                    <ul class="p-0 m-0">
+                                        <li><i class="fa-solid fa-check"></i> Base Charge: <span>$2.30</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Distance Allowance: <span>5000m</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> Up To 50 kms: <span>$1.38/km</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Booking Fee: <span>$0.99</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Extra Passangers: <span>$0.45</span>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center pt-5 pb-3">
+                                        <a href="#" class="theme-btn d-block">Choose Plan<i
+                                                class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 pt-4">
+                    <div class="card border-0 shadow rounded-4">
+                        <img class="card-img-top fw-medium p-4" src="./IMG/tt.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">BASIC PAKAGE</h4>
+                            <p class="rate-duration pb-5">One Time Payment</p>
+                            <div class="rate-content pt-5">
+                                <div class="rate-icon">
+                                    <img src="img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div class="rate-feature">
+                                    <ul class="p-0 m-0">
+                                        <li><i class="fa-solid fa-check"></i> Base Charge: <span>$2.30</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Distance Allowance: <span>5000m</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> Up To 50 kms: <span>$1.38/km</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Booking Fee: <span>$0.99</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Extra Passangers: <span>$0.45</span>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center pt-5 pb-3">
+                                        <a href="#" class="theme-btn d-block">Choose Plan<i
+                                                class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 pt-4">
+                    <div class="card border-0 shadow rounded-4">
+                        <img class="card-img-top fw-medium p-4" src="./IMG/tt.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">BASIC PAKAGE</h4>
+                            <p class="rate-duration pb-5">One Time Payment</p>
+                            <div class="rate-content pt-5">
+                                <div class="rate-icon">
+                                    <img src="img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div class="rate-feature">
+                                    <ul class="p-0 m-0">
+                                        <li><i class="fa-solid fa-check"></i> Base Charge: <span>$2.30</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Distance Allowance: <span>5000m</span>
+                                        </li>
+                                        <li><i class="fa-solid fa-check"></i> Up To 50 kms: <span>$1.38/km</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Booking Fee: <span>$0.99</span></li>
+                                        <li><i class="fa-solid fa-check"></i> Extra Passangers: <span>$0.45</span>
+                                        </li>
+                                    </ul>
+                                    <div class="text-center pt-5 pb-3">
+                                        <a href="#" class="theme-btn d-block">Choose Plan<i
+                                                class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DRIVERS-section -->
+    <section>
+        <div class="team-area pb-120">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="site-heading text-center">
+                            <span class="site-title-tagline">Drivers</span>
+                            <h2 class="site-title">Our Expert Drivers</h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                            <div class="team-img">
+                                <img src="img/team/01.jpg" class="img-fluid" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Alma Mcelroy</a></h5>
+                                    <span>Expert Driver</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInDown" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+                            <div class="team-img">
+                                <img src="img/team/02.jpg" class="img-fluid" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Marie Hooks</a></h5>
+                                    <span>Expert Driver</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInUp" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                            <div class="team-img">
+                                <img src="img/team/03.jpg" class="img-fluid" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Daniel Nesmith</a></h5>
+                                    <span>Expert Driver</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="team-item wow fadeInDown" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+                            <div class="team-img">
+                                <img src="img/team/04.jpg" class="img-fluid" alt="thumb">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-bio">
+                                    <h5><a href="#">Gertrude Barrow</a></h5>
+                                    <span>Expert Driver</span>
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- video-area -->
+    <section>
+        <div class="container">
+            <div class="video-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="video-wrapper">
+                            <a class="play-btn popup-youtube" href="https://www.youtube.com/watch?v=ckHzmP1evNU">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="choose-area cha-2 py-120">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="choose-content">
+                            <div class="site-heading wow fadeInDown mb-4" data-wow-delay=".25s"
+                                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInDown;">
+                                <span class="site-title-tagline text-white justify-content-start">
+                                    <i class="flaticon-drive"></i> Why Choose Us
+                                </span>
+                                <h2 class="site-title text-white mb-10">We are dedicated <span>to provide</span> quality
+                                    service</h2>
+                                <p class="text-white">
+                                    There are many variations of passages available but the majority have suffered
+                                    alteration in some form going to use a passage by injected humour randomised words
+                                    which don't look even slightly believable.
+                                </p>
+                            </div>
+                            <div class="choose-img wow fadeInUp" data-wow-delay=".25s"
+                                style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInUp;">
+                                <img src="img/choose/01.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="choose-content-wrapper wow fadeInRight" data-wow-delay=".25s"
+                            style="visibility: visible; animation-delay: 0.25s; animation-name: fadeInRight;">
+                            <div class="choose-item">
+                                <span class="choose-count">01</span>
+                                <div class="choose-item-icon">
+                                    <img src="img/icon/taxi-1.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>Best Quality Taxi</h3>
+                                    <p>There are many variations of passages available but the majority have suffered
+                                        alteration in form injected humour words which don't look even slightly
+                                        believable. If you are going passage you need there anything embar.</p>
+                                </div>
+                            </div>
+                            <div class="choose-item ms-lg-5">
+                                <span class="choose-count">02</span>
+                                <div class="choose-item-icon">
+                                    <img src="img/icon/driver.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>Expert Drivers</h3>
+                                    <p>There are many variations of passages available but the majority have suffered
+                                        alteration in form injected humour words which even slightly believable. If you
+                                        are going passage you need there anything.</p>
+                                </div>
+                            </div>
+                            <div class="choose-item mb-lg-0">
+                                <span class="choose-count">03</span>
+                                <div class="choose-item-icon">
+                                    <img src="img/icon/taxi-location.svg" alt="">
+                                </div>
+                                <div class="choose-item-info">
+                                    <h3>Many Locations</h3>
+                                    <p>There are many variations of passages available but the majority have suffered
+                                        alteration in form injected humour words which don't look even slightly
+                                        believable. If you are going passage you need there anything embar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- FAQ'S-section -->
+    <section>
+        <div class="container faqs-sec">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <span class="faqs">FAQ'S</span>
+                    <div class="faqs-content">
+                        <h1 class=" site-title pt-3">General <span class="frequently-word">Frequently</span> Asked
+                            Questions</h1>
+                        <div class="faqs-content">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even</p>
+                        </div>
+                        <div>
+                            <img src="./IMG/fag.jpg" class="rounded-4 img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 pt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <span><i class="far fa-question"></i></span> How Long Does A Booking Take ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We denounce with righteous indignation and dislike men who
+                                    are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                    blinded by desire. Ante odio dignissim quam, vitae pulvinar turpis erat ac elit
+                                    eu orci id odio facilisis pharetra.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span><i class="far fa-question"></i></span> How Can I Become A Member
+                                    ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We denounce with righteous indignation and dislike men who
+                                    are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                    blinded by desire. Ante odio dignissim quam, vitae pulvinar turpis erat ac elit
+                                    eu orci id odio facilisis pharetra.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span><i class="far fa-question"></i></span> What Payment Gateway You Support ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We denounce with righteous indignation and dislike men who
+                                    are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                    blinded by desire. Ante odio dignissim quam, vitae pulvinar turpis erat ac elit
+                                    eu orci id odio facilisis pharetra.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span><i class="far fa-question"></i></span> How Can I Cancel My Request ?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    We denounce with righteous indignation and dislike men who
+                                    are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                    blinded by desire. Ante odio dignissim quam, vitae pulvinar turpis erat ac elit
+                                    eu orci id odio facilisis pharetra.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS-section -->
+    <section>
+        <div class="testmonial-bg position-relative overflow-hidden">
+            <div class="container text-center testmonial-title">
+                <span>TESTIMONIALS</span>
+            </div>
+            <div class="container text-center testmonial-content">
+                <h1>What Our Client <span>Say's</span></h1>
+            </div>
+            <div class="container test-container pt-5">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                        <div class="card rounded-4">
+                            <div class="card-body p-4">
+                                <div class="testmonial-card">
+                                    <div class="author-img">
+                                        <img src="./IMG/testmonial/01.jpg" class="rounded-circle img-fluid" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Parker Jime</h4>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        There are many variations of words suffered available to the have majority but
+                                        the majority
+                                        suffer to alteration injected hidden the middle text.
+                                    </p>
+                                </div>
+                                <div class="testmonial-rate fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                        <div class="card rounded-4">
+                            <div class="card-body p-4">
+                                <div class="testmonial-card">
+                                    <div class="author-img">
+                                        <img src="./IMG/testmonial/02.jpg" class="rounded-circle img-fluid" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Parker Jime</h4>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        There are many variations of words suffered available to the have majority but
+                                        the majority
+                                        suffer to alteration injected hidden the middle text.
+                                    </p>
+                                </div>
+                                <div class="testmonial-rate fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                        <div class="card rounded-4">
+                            <div class="card-body p-4">
+                                <div class="testmonial-card">
+                                    <div class="author-img">
+                                        <img src="./IMG/testmonial/03.jpg" class="rounded-circle img-fluid" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Parker Jime</h4>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        There are many variations of words suffered available to the have majority but
+                                        the majority
+                                        suffer to alteration injected hidden the middle text.
+                                    </p>
+                                </div>
+                                <div class="testmonial-rate fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pt-3">
+                        <div class="card rounded-4">
+                            <div class="card-body p-4">
+                                <div class="testmonial-card">
+                                    <div class="author-img">
+                                        <img src="./IMG/testmonial/04.jpg" class="rounded-circle img-fluid" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Parker Jime</h4>
+                                        <span>Customer</span>
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p>
+                                        There are many variations of words suffered available to the have majority but
+                                        the majority
+                                        suffer to alteration injected hidden the middle text.
+                                    </p>
+                                </div>
+                                <div class="testmonial-rate fs-5">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- cat-section -->
+    <div class="cta-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-start text-lg-start">
+                    <div class=" cta-text">
+                        <h1>Book Your Cab It's Simple And Affordable</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout point of using is that it has normal distribution of
+                            letters.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center text-lg-end">
+                    <div class="mb-20">
+                        <a href="#" class="cta-number"><i class="fa fa-headset"></i>+2 123 654 7898</a>
+                    </div>
+                    <div class="cta-btn">
+                        <a href="#" class="theme-btn">Book Your Cab<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR BLOG -->
+    <section>
+
+        <div class="container text-center our-blog-content">
+            <div class="row">
+                <span class="site-title-tagline">OUR BLOG</span>
+                <h1 class="site-title">Latest News & Blog</h1>
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item wow fadeInUp">
+                        <div class="blog-item-img">
+                            <img src="img/blog/01.jpg" class="img-fluid" alt="Thumb">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> February 23, 2023</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variations of passage available.</a>
+                            </h4>
+                            <a class="theme-btn" href="#">Read More<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item wow fadeInUp">
+                        <div class="blog-item-img">
+                            <img src="img/blog/02.jpg" class="img-fluid" alt="Thumb">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> February 23, 2023</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variations of passage available.</a>
+                            </h4>
+                            <a class="theme-btn" href="#">Read More<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="blog-item wow fadeInUp">
+                        <div class="blog-item-img">
+                            <img src="img/blog/03.jpg" class="img-fluid" alt="Thumb">
+                        </div>
+                        <div class="blog-item-info">
+                            <div class="blog-item-meta">
+                                <ul>
+                                    <li><a href="#"><i class="far fa-user-circle"></i> By Alicia Davis</a></li>
+                                    <li><a href="#"><i class="far fa-calendar-alt"></i> February 23, 2023</a></li>
+                                </ul>
+                            </div>
+                            <h4 class="blog-title">
+                                <a href="#">There are many variations of passage available.</a>
+                            </h4>
+                            <a class="theme-btn" href="#">Read More<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our-partner-section -->
+    <section>
+        <div class="partner">
+            <div class="container partner-slider pt-5">
+                <div class="row">
+                    <div class="col">
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-inner1">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/01.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/02.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/03.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/02.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/01.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6 pt-4">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/03.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="carousel-item ">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/01.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/02.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/03.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/02.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/01.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 col-sm-6">
+                                            <div class="">
+                                                <div class="our-partner-img">
+                                                    <img src="./IMG/partner/03.png" class="img-fluid" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- download-section -->
+    <section>
+        <div class="download-area mb-120">
+            <div class="container">
+                <div class="download-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="download-content">
+                                <div class=" mb-4">
+                                    <span class="site-title-tagline justify-content-start">
+                                        <i class="flaticon-drive"></i> Get Our App
+                                    </span>
+                                    <h2 class="site-title mb-10">Download <span>Our Taxica</span> App For Free</h2>
+                                    <p>
+                                        There are many variations of passages available but the majority have suffered
+                                        in some form going to use a passage by injected humour.
+                                    </p>
+                                </div>
+                                <div class="download-btn">
+                                    <a href="#">
+                                        <i class="fab fa-google-play"></i>
+                                        <div class="download-btn-content">
+                                            <span>Get It On</span>
+                                            <strong>Google Play</strong>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-app-store"></i>
+                                        <div class="download-btn-content">
+                                            <span>Get It On</span>
+                                            <strong>App Store</strong>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-img">
+                        <img src="IMG/download.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-section -->
+    <footer>
+        <footer class="footer-area">
+            <div class="footer-widget">
+                <div class="container">
+                    <div class="row footer-widget-wrapper pt-120 pb-70">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-widget-box about-us text-white">
+                                <a href="#" class="footer-logo">
+                                    <img src="./IMG/logo-light.png" alt="">
+                                </a>
+                                <p class="mb-3">
+                                    We are many variations of passages available but the majority have suffered
+                                    alteration
+                                    in some form by injected humour words believable.
+                                </p>
+                                <ul class="footer-contact p-0">
+                                    <li><a href="tel:+21236547898"><i class="fa-solid fa-phone text-white"></i>+2 123
+                                            654 7898</a></li>
+                                    <li><i class="fa-solid fa-location-dot text-white"></i>25/B Milford Road, New York
+                                    </li>
+                                    <li><a href="mailto:info@example.com"><i
+                                                class="fa-regular fa-envelope text-white"></i>info@example.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-2">
+                            <div class="footer-widget-box list">
+                                <h4 class="footer-widget-title">Quick Links</h4>
+                                <ul class="footer-list p-0">
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> About Us</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Update News</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Testimonials</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Terms Of Service</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Privacy policy</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Our Drivers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-widget-box list">
+                                <h4 class="footer-widget-title">Support Center</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> FAQ's</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Affiliates</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Booking Tips</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Book A Ride</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Contact Us</a></li>
+                                    <li><a href="#"><i class="fas fa-caret-right"></i> Sitemap</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-widget-box list">
+                                <h4 class="footer-widget-title">Newsletter</h4>
+                                <div class="footer-newsletter">
+                                    <p>Subscribe Our Newsletter To Get Latest Update And News</p>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="email" class="form-control" placeholder="Your Email">
+                                            <button class="theme-btn" type="submit">
+                                                Subscribe Now <i class="far fa-paper-plane"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <p class="copyright-text">
+                                © Copyright <span id="date">2023</span> <a href="#"> Taxica </a> All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="col-md-6 align-self-center">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>
